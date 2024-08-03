@@ -99,10 +99,11 @@ function gameEngine(){
 
 // Main Logic
 window.requestAnimationFrame(main);
-bgSound.play();
-bgSound.loop = true;
+
 window.addEventListener("keydown" , e=>{
     direction = {x:0 , y:0}; //start the game
+    bgSound.play();
+    bgSound.loop = true;
     moveSound.play();
     switch(e.key){
         case "ArrowUp" :
